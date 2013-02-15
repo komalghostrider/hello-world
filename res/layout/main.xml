@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/bg1">
+     
+     <RelativeLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         >
+
+         <Button
+             android:id="@+id/button_objects"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:background="@drawable/stone"
+             android:onClick="onClickObjects"/>
+         
+         <Button
+              android:id="@+id/button_erase"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:background="@drawable/clean"/>
+
+         <Button
+             android:id="@+id/button_share"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:background="@drawable/shareicon"
+             android:onClick="onClickShare"/>
+
+         <Button
+             android:id="@+id/button_save"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_toLeftOf="@+id/button_share"
+             android:background="@drawable/ic_menu_save"
+             android:onClick="onClickSave" 
+             android:layout_marginRight="10dip"
+             android:layout_weight="1"/>
+
+         <Button
+             android:id="@+id/button_gallery"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_toRightOf="@+id/button_share"
+             android:background="@drawable/galleryicon"
+             android:onClick="onClickGallery" 
+             android:layout_marginLeft="10dip"
+             android:layout_weight="1"/>
+        
+    </RelativeLayout>
+   
+    <com.sandwriting.FingerPaint
+        android:id="@+id/fingerpaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonsLayout" >
+    </com.sandwriting.FingerPaint>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+    </RelativeLayout>
+
+   
+
+</RelativeLayout>
